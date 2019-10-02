@@ -14,9 +14,16 @@ void setup() {
 void draw() {
       // Use this print statement to find out the coordinates of Waldo
       // println("X: " + mouseX + " Y: " + mouseY); 
+      println("X: " + mouseX + " Y: " + mouseY); 
 
       // If the mouse is on Waldo, print “Waldo found!”
-
+if (mousePressed){     
+if (mouseX==488 && mouseY==60){
+  print("Waldo found!");
+  playWoohoo();
+}else{
+  playDoh();
+}}
       // If Waldo is found, also use the method below to play “Woohoo”
       // Change the name of the sound file if you need to 
       // If the mouse is pressed and they’re not on Waldo, play “Doh”

@@ -8,6 +8,18 @@ void setup() {
   
 }
 void draw() {
+    if (mouseX>375){
+    mouseX=365;
+  }
+  if (mouseX<355){
+    mouseX=365;
+  }
+  if (mouseY>265){
+    mouseY=255;
+  }
+  if (mouseY<245){
+    mouseY=255;
+  }
          background(face);
   fill(#FFFFF7);
   ellipse(365,255,60,60);
@@ -16,7 +28,9 @@ void draw() {
   fill(#FFFFF7);
   ellipse(365+160,255,60,60);
   fill(#030303);
-  ellipse(mouseX+150,mouseY,45,45);
+  ellipse(mouseX+160,mouseY,45,45);
   
-  
+  if (mouseX>370){
+    mouseX=365;
+  }
 }
