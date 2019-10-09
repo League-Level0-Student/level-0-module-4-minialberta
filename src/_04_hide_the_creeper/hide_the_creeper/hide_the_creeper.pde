@@ -22,7 +22,7 @@ void draw() {
 
 
 boolean isNear(int a, int b){ 
-if (abs(a - b) < 10){
+if (abs(a - b) < 5){
           fill(#5FFC47);
      ellipse(mouseX,mouseY,25,25);
      text("You found the creeper!",50,50);
