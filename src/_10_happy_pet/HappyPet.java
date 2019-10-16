@@ -8,7 +8,7 @@ public class HappyPet {
 	static int happinessLevel=0;
 	public static void main(String[] args) {
 		// 1. Ask the user what kind of pet they want to buy, and store their answer in a variable
-String bobbetta=JOptionPane.showInputDialog("What type of pet do you want to buy?");
+String dinosaur=JOptionPane.showInputDialog("What type of pet do you want to buy?");
 		// 7. REPEAT steps 3 - 6 enough times to make your pet happy!
 		
 			// 3. Use showOptionDialog to ask the user what they want to do to make their pet happy
@@ -34,7 +34,7 @@ if (task==0) {
 	//    Each method should create a pop-up with the pet's response (eg. cat might purr when pet), 
 	//    and INCREMENT the pet's happiness Level.
 	private static void cuddle() {
-		JOptionPane.showMessageDialog(null, "He gives you a hug");
+		JOptionPane.showMessageDialog(null, dinosaur+" gives you a hug");
 		happinessLevel=happinessLevel+1;
 }
 	private static void food() {
