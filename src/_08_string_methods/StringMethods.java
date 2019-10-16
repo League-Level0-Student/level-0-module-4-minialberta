@@ -27,8 +27,11 @@ for (int i = 0; i < ans.length(); i++) {
 		//    Print the char's position to the console.
 		//    EXAMPLE: if your string is "abc" and you are searching 
 		//             for char 'b', then print "b is at index 1"
-		for (int i = 0; i < 1; i++) {
-			JOptionPane.showMessageDialog(null, "b is at index 3");
+		for (int i = 0; i < ans.length(); i++) {
+ 			if ('y'==ans.charAt(i)) {
+				JOptionPane.showMessageDialog(null, "y is at index "+i);
+			}
+
 		}
 	}
 }
